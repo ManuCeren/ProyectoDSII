@@ -1,0 +1,404 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebApiProyectoDSII",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Cliente/Lista": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cliente/Obtener/{id}": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cliente/Nuevo": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cliente/Editar": {
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cliente/Eliminar/{id}": {
+      "delete": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Cliente": {
+        "type": "object",
+        "properties": {
+          "idClientes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "envíos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Envío"
+            },
+            "nullable": true
+          },
+          "facturacions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Facturacion"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetalleFacturacion": {
+        "type": "object",
+        "properties": {
+          "idDetalleFacturacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idFacturacion": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detalle": {
+            "type": "string",
+            "nullable": true
+          },
+          "precio": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idFacturacionNavigation": {
+            "$ref": "#/components/schemas/Facturacion"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Envío": {
+        "type": "object",
+        "properties": {
+          "idEnvios": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCliente": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idRuta": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fechaSolicitud": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "fechaEntregaEsperada": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "mercancía": {
+            "type": "string",
+            "nullable": true
+          },
+          "pesoTotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "volumenTotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "facturacions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Facturacion"
+            },
+            "nullable": true
+          },
+          "idClienteNavigation": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "idRutaNavigation": {
+            "$ref": "#/components/schemas/Ruta"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Facturacion": {
+        "type": "object",
+        "properties": {
+          "idFacturacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCliente": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fechaFactura": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "montoTotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "estadoPago": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEnvio": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detalleFacturacions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetalleFacturacion"
+            },
+            "nullable": true
+          },
+          "idClienteNavigation": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "idEnvioNavigation": {
+            "$ref": "#/components/schemas/Envío"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ruta": {
+        "type": "object",
+        "properties": {
+          "idRutas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "origen": {
+            "type": "string",
+            "nullable": true
+          },
+          "destino": {
+            "type": "string",
+            "nullable": true
+          },
+          "distancia": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "envíos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Envío"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
