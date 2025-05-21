@@ -12,6 +12,7 @@ CREATE TABLE Direcciones (
 -- Crear tabla Unidades
 CREATE TABLE Unidades (
     idUnidades INT PRIMARY KEY IDENTITY(1,1),
+	TipoUnidad VARCHAR(50),
     Placa VARCHAR(20),
     Marca VARCHAR(50),
     Modelo VARCHAR(50),
@@ -59,8 +60,8 @@ CREATE TABLE Mantenimientos (
     FOREIGN KEY (idUnidad) REFERENCES Unidades(idUnidades)
 );
 
--- Crear tabla Envíos
-CREATE TABLE Envíos (
+-- Crear tabla Envios
+CREATE TABLE Envios (
     idEnvios INT PRIMARY KEY IDENTITY(1,1),
     idCliente INT,
     idRuta INT,
@@ -83,7 +84,7 @@ CREATE TABLE Facturacion (
     EstadoPago VARCHAR(20),
     idEnvio INT,
     FOREIGN KEY (idCliente) REFERENCES Clientes(idClientes),
-    FOREIGN KEY (idEnvio) REFERENCES Envíos(idEnvios)
+    FOREIGN KEY (idEnvio) REFERENCES Envios(idEnvios)
 );
 
 -- Crear tabla DetalleFacturación
@@ -136,7 +137,7 @@ INSERT INTO Clientes (nombreCliente, Direccion, Telefono, Email, TipoCliente) VA
 ('Carlos Ruiz', 'Calle 789, C', '564738291', 'carlos@cliente.com', 'Nuevo');
 
 -- Insertar en la tabla Envíos
-INSERT INTO Envíos (idCliente, idRuta, FechaSolicitud, FechaEntregaEsperada, Estado, Mercancía, PesoTotal, VolumenTotal) VALUES 
+INSERT INTO Envios (idCliente, idRuta, FechaSolicitud, FechaEntregaEsperada, Estado, Mercancía, PesoTotal, VolumenTotal) VALUES 
 (1, 1, '2022-01-01', '2022-01-05', 'En Proceso', 'Carga General', 500, 10),
 (2, 2, '2022-01-03', '2022-01-07', 'Pendiente', 'Ropa', 200, 5),
 (3, 3, '2022-01-04', '2022-01-08', 'Completado', 'Electrónica', 150, 2);

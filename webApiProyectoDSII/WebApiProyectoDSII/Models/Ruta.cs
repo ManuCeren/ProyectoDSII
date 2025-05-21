@@ -13,5 +13,5 @@ public partial class Ruta
 
     public int? Distancia { get; set; }
 
-    public virtual ICollection<Envío> Envíos { get; set; } = new List<Envío>();
+    public virtual ICollection<Envio> Envíos { get; set; } = new List<Envio>();
 }

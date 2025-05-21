@@ -21,5 +21,5 @@ public partial class Facturacion
 
     public virtual Cliente? IdClienteNavigation { get; set; }
 
-    public virtual Envío? IdEnvioNavigation { get; set; }
+    public virtual Envio? IdEnvioNavigation { get; set; }
 }

@@ -17,7 +17,7 @@ public partial class Cliente
 
     public string? TipoCliente { get; set; }
 
-    public virtual ICollection<Envío> Envíos { get; set; } = new List<Envío>();
+    public virtual ICollection<Envio> Envíos { get; set; } = new List<Envio>();
 
     public virtual ICollection<Facturacion> Facturacions { get; set; } = new List<Facturacion>();
 }

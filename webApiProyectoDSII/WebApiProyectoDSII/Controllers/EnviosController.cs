@@ -19,7 +19,7 @@ namespace WebApiProyectoDSII.Controllers
         [Route("Lista")]
         public async Task<IActionResult> Get()
         {
-            var listaEnvios = await dbContext.Envíos.ToListAsync();
+            var listaEnvios = await dbContext.Envios.ToListAsync();
             
             return StatusCode(StatusCodes.Status200OK, listaEnvios);
         }
@@ -27,24 +27,24 @@ namespace WebApiProyectoDSII.Controllers
         [Route("Obtener/{id:int}")]
         public async Task<IActionResult> Get(int id)
         {
-            var envio = await dbContext.Envíos.FirstOrDefaultAsync(c => c.IdEnvios == id);
+            var envio = await dbContext.Envios.FirstOrDefaultAsync(c => c.IdEnvios == id);
             return StatusCode(StatusCodes.Status200OK, envio);
         }
 
         [HttpPost]
         [Route("Nuevo")]
-        public async Task<IActionResult> Nuevo([FromBody] Envío objeto)
+        public async Task<IActionResult> Nuevo([FromBody] Envio objeto)
         {
-            await dbContext.Envíos.AddAsync(objeto);
+            await dbContext.Envios.AddAsync(objeto);
             await dbContext.SaveChangesAsync();
             return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
         }
 
         [HttpPut]
         [Route("Editar")]
-        public async Task<IActionResult> Editar([FromBody] Envío objeto)
+        public async Task<IActionResult> Editar([FromBody] Envio objeto)
         {
-            dbContext.Envíos.Update(objeto);
+            dbContext.Envios.Update(objeto);
             await dbContext.SaveChangesAsync();
             return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
         }
@@ -53,8 +53,8 @@ namespace WebApiProyectoDSII.Controllers
         [Route("Eliminar/{id:int}")]
         public async Task<IActionResult> Eliminar(int id)
         {
-            var envio = await dbContext.Envíos.FirstOrDefaultAsync(c => c.IdEnvios == id);
-            dbContext.Envíos.Remove(envio);
+            var envio = await dbContext.Envios.FirstOrDefaultAsync(c => c.IdEnvios == id);
+            dbContext.Envios.Remove(envio);
             await dbContext.SaveChangesAsync();
             return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
         }

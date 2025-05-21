@@ -74,6 +74,154 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApiProyectoDSII.Controllers.EnvioController",
+    "Method": "Editar",
+    "RelativePath": "api/Envio/Editar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "WebApiProyectoDSII.Models.Envio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.EnvioController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Envio/Eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.EnvioController",
+    "Method": "Get",
+    "RelativePath": "api/Envio/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.EnvioController",
+    "Method": "Nuevo",
+    "RelativePath": "api/Envio/Nuevo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "WebApiProyectoDSII.Models.Envio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.EnvioController",
+    "Method": "Get",
+    "RelativePath": "api/Envio/Obtener/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.UnidadesController",
+    "Method": "Editar",
+    "RelativePath": "api/Unidades/Editar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "WebApiProyectoDSII.Models.Unidade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.UnidadesController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Unidades/Eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.UnidadesController",
+    "Method": "Get",
+    "RelativePath": "api/Unidades/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.UnidadesController",
+    "Method": "Nueva",
+    "RelativePath": "api/Unidades/Nueva",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "WebApiProyectoDSII.Models.Unidade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.UnidadesController",
+    "Method": "Get",
+    "RelativePath": "api/Unidades/Obtener/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApiProyectoDSII.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

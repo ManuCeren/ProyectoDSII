@@ -23,7 +23,7 @@ public partial class TransporteFloresDbContext : DbContext
 
     public virtual DbSet<Direccione> Direcciones { get; set; }
 
-    public virtual DbSet<Envío> Envíos { get; set; }
+    public virtual DbSet<Envio> Envios { get; set; }
 
     public virtual DbSet<Facturacion> Facturacions { get; set; }
 
@@ -120,7 +120,7 @@ public partial class TransporteFloresDbContext : DbContext
                 .IsUnicode(false);
         });
 
-        modelBuilder.Entity<Envío>(entity =>
+        modelBuilder.Entity<Envio>(entity =>
         {
             entity.HasKey(e => e.IdEnvios).HasName("PK__Envíos__32D6B7E504BD2E70");
 

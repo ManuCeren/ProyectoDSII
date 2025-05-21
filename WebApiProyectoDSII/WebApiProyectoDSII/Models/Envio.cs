@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WebApiProyectoDSII.Models;
 
-public partial class Envío
+public partial class Envio
 {
     public int IdEnvios { get; set; }
 
