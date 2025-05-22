@@ -198,7 +198,10 @@ public partial class TransporteFloresDbContext : DbContext
             entity.HasKey(e => e.IdUnidades).HasName("PK__Unidades__5C4AD0DB38D8EDBD");
 
             entity.Property(e => e.IdUnidades).HasColumnName("idUnidades");
-            entity.Property(e => e.Estado)
+            entity.Property(e => e.TipoUnidad)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Placa)
                 .HasMaxLength(20)
                 .IsUnicode(false);
             entity.Property(e => e.Marca)
@@ -207,10 +210,13 @@ public partial class TransporteFloresDbContext : DbContext
             entity.Property(e => e.Modelo)
                 .HasMaxLength(50)
                 .IsUnicode(false);
-            entity.Property(e => e.Placa)
+            entity.Property(e => e.Año);
+            entity.Property(e => e.Estado)
                 .HasMaxLength(20)
                 .IsUnicode(false);
+            entity.Property(e => e.KilometrajeActual);
         });
+
 
         modelBuilder.Entity<Usuario>(entity =>
         {

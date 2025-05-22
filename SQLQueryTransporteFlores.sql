@@ -68,7 +68,7 @@ CREATE TABLE Envios (
     FechaSolicitud DATE,
     FechaEntregaEsperada DATE,
     Estado VARCHAR(20),
-    Mercancía VARCHAR(255),
+    Mercancia VARCHAR(255),
     PesoTotal DECIMAL(18,2),
     VolumenTotal DECIMAL(18,2),
     FOREIGN KEY (idCliente) REFERENCES Clientes(idClientes),
@@ -113,10 +113,10 @@ INSERT INTO Direcciones (Direccion1, Direccion2) VALUES
 ('Calle 789, C', NULL);
 
 -- Insertar en la tabla Unidades
-INSERT INTO Unidades (Placa, Marca, Modelo, Año, Estado, KilometrajeActual) VALUES 
-('C 68272', 'Volvo', 'FH16', 2019, 'Activo', 500000),
-('C 111503', 'Mercedes', 'Actros', 2018, 'En Mantenimiento', 300000),
-('C 74283', 'Scania', 'R500', 2020, 'Activo', 400000);
+INSERT INTO Unidades (TipoUnidad, Placa, Marca, Modelo, Año, Estado, KilometrajeActual) VALUES 
+('Cabezal','C 68272', 'Volvo', 'FH16', 2019, 'Activo', 500000),
+('Camion','C 111503', 'Mercedes', 'Actros', 2018, 'En Mantenimiento', 300000),
+('Cabezal','C 74283', 'Scania', 'R500', 2020, 'Activo', 400000);
 
 -- Insertar en la tabla Conductores
 INSERT INTO Conductores (Nombre, Licencia, FechaIngreso, Estado, Telefono, idVehiculo) VALUES 

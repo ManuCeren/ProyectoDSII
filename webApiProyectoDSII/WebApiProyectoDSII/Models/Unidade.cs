@@ -7,6 +7,8 @@ public partial class Unidade
 {
     public int IdUnidades { get; set; }
 
+    public string TipoUnidad { get; set; } = null!;
+
     public string? Placa { get; set; }
 
     public string? Marca { get; set; }
