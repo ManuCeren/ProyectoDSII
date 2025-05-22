@@ -130,7 +130,7 @@ public partial class TransporteFloresDbContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.IdCliente).HasColumnName("idCliente");
             entity.Property(e => e.IdRuta).HasColumnName("idRuta");
-            entity.Property(e => e.Mercancía)
+            entity.Property(e => e.Mercancia)
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.PesoTotal).HasColumnType("decimal(18, 2)");

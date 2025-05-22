@@ -548,7 +548,7 @@
             "type": "string",
             "nullable": true
           },
-          "mercancía": {
+          "mercancia": {
             "type": "string",
             "nullable": true
           },
@@ -689,6 +689,10 @@
           "idUnidades": {
             "type": "integer",
             "format": "int32"
+          },
+          "tipoUnidad": {
+            "type": "string",
+            "nullable": true
           },
           "placa": {
             "type": "string",

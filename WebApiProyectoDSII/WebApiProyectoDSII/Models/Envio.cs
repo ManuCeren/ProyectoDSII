@@ -17,7 +17,7 @@ public partial class Envio
 
     public string? Estado { get; set; }
 
-    public string? Mercancía { get; set; }
+    public string? Mercancia { get; set; }
 
     public decimal? PesoTotal { get; set; }
 
