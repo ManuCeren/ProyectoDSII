@@ -58,5 +58,30 @@ namespace WebApiProyectoDSII.Controllers
             await dbContext.SaveChangesAsync();
             return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
         }
+        [HttpGet("VistaDetallada")]
+        public async Task<IActionResult> ObtenerVistaDetallada()
+        {
+            var vista = await dbContext.VistaEnviosDetallados.ToListAsync();
+            return Ok(vista);
+        }
+        [HttpGet("ResumenViajesPorCliente")]
+        public async Task<IActionResult> GetViajesPorCliente()
+        {
+            var resumen = await dbContext.Envios
+                .Join(dbContext.Clientes,
+                      e => e.IdCliente,
+                      c => c.IdClientes,
+                      (e, c) => new { c.NombreCliente })
+                .GroupBy(x => x.NombreCliente)
+                .Select(g => new
+                {
+                    nombreCliente = g.Key,
+                    cantidadViajes = g.Count()
+                })
+                .ToListAsync();
+
+            return Ok(resumen);
+        }
+
     }
 }

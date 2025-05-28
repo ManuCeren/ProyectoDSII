@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\models\\vistaenvio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\models\\vistaenvio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\models\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\models\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\controllers\\envioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\controllers\\envioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\models\\transportefloresdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\models\\transportefloresdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\models\\unidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\models\\unidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\controllers\\unidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\controllers\\unidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\controllers\\envioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\controllers\\envioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|c:\\users\\manue\\source\\repos\\webapiproyectodsii\\webapiproyectodsii\\models\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4931CDA-55A7-40AE-974C-9640918A241C}|WebApiProyectoDSII\\WebApiProyectoDSII.csproj|solutionrelative:webapiproyectodsii\\models\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,12 +39,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Program.cs",
+              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Program.cs",
+              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Program.cs",
+              "RelativeToolTip": "WebApiProyectoDSII\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T01:32:54.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnviosController.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\EnviosController.cs",
+              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Controllers\\EnviosController.cs",
+              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\EnviosController.cs",
+              "RelativeToolTip": "WebApiProyectoDSII\\Controllers\\EnviosController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswEwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T22:49:45.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VistaEnvio.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\VistaEnvio.cs",
+              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Models\\VistaEnvio.cs",
+              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\VistaEnvio.cs",
+              "RelativeToolTip": "WebApiProyectoDSII\\Models\\VistaEnvio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:51:52.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Envio.cs",
               "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\Envio.cs",
               "RelativeDocumentMoniker": "WebApiProyectoDSII\\Models\\Envio.cs",
               "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\Envio.cs",
               "RelativeToolTip": "WebApiProyectoDSII\\Models\\Envio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwBgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T03:25:36.199Z",
               "EditorCaption": ""
@@ -64,89 +91,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Unidade.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\Unidade.cs",
-              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Models\\Unidade.cs",
-              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\Unidade.cs",
-              "RelativeToolTip": "WebApiProyectoDSII\\Models\\Unidade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:06:04.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\Cliente.cs",
-              "RelativeToolTip": "WebApiProyectoDSII\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T22:37:13.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Program.cs",
-              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Program.cs",
-              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Program.cs",
-              "RelativeToolTip": "WebApiProyectoDSII\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T22:18:35.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnidadesController.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\UnidadesController.cs",
-              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Controllers\\UnidadesController.cs",
-              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\UnidadesController.cs",
-              "RelativeToolTip": "WebApiProyectoDSII\\Controllers\\UnidadesController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwBUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T20:39:59.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "WebApiProyectoDSII\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T17:33:32.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "TransporteFloresDbContext.cs",
               "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\TransporteFloresDbContext.cs",
               "RelativeDocumentMoniker": "WebApiProyectoDSII\\Models\\TransporteFloresDbContext.cs",
               "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Models\\TransporteFloresDbContext.cs",
               "RelativeToolTip": "WebApiProyectoDSII\\Models\\TransporteFloresDbContext.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAkwIoAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAqwIwAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T17:05:16.28Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EnviosController.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\EnviosController.cs",
-              "RelativeDocumentMoniker": "WebApiProyectoDSII\\Controllers\\EnviosController.cs",
-              "ToolTip": "C:\\Users\\manue\\source\\repos\\WebApiProyectoDSII\\WebApiProyectoDSII\\Controllers\\EnviosController.cs",
-              "RelativeToolTip": "WebApiProyectoDSII\\Controllers\\EnviosController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA0wDgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T04:18:09.358Z"
             }
           ]
         }

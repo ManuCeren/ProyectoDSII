@@ -148,6 +148,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApiProyectoDSII.Controllers.EnvioController",
+    "Method": "GetViajesPorCliente",
+    "RelativePath": "api/Envio/ResumenViajesPorCliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiProyectoDSII.Controllers.EnvioController",
+    "Method": "ObtenerVistaDetallada",
+    "RelativePath": "api/Envio/VistaDetallada",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApiProyectoDSII.Controllers.UnidadesController",
     "Method": "Editar",
     "RelativePath": "api/Unidades/Editar",

@@ -22,7 +22,7 @@ public partial class Envio
     public decimal? PesoTotal { get; set; }
 
     public decimal? VolumenTotal { get; set; }
-
+    public decimal? CostoEnvio { get; set; }
     public virtual ICollection<Facturacion> Facturacions { get; set; } = new List<Facturacion>();
 
     public virtual Cliente? IdClienteNavigation { get; set; }

@@ -245,6 +245,30 @@
         }
       }
     },
+    "/api/Envio/VistaDetallada": {
+      "get": {
+        "tags": [
+          "Envio"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Envio/ResumenViajesPorCliente": {
+      "get": {
+        "tags": [
+          "Envio"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Unidades/Lista": {
       "get": {
         "tags": [
@@ -558,6 +582,11 @@
             "nullable": true
           },
           "volumenTotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "costoEnvio": {
             "type": "number",
             "format": "double",
             "nullable": true

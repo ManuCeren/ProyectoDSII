@@ -34,6 +34,7 @@ public partial class TransporteFloresDbContext : DbContext
     public virtual DbSet<Unidade> Unidades { get; set; }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
+    public virtual DbSet<VistaEnvio> VistaEnviosDetallados { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -135,6 +136,7 @@ public partial class TransporteFloresDbContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.PesoTotal).HasColumnType("decimal(18, 2)");
             entity.Property(e => e.VolumenTotal).HasColumnType("decimal(18, 2)");
+            entity.Property(e => e.CostoEnvio).HasColumnType("decimal(10, 2)");
 
             entity.HasOne(d => d.IdClienteNavigation).WithMany(p => p.Envíos)
                 .HasForeignKey(d => d.IdCliente)
@@ -236,6 +238,11 @@ public partial class TransporteFloresDbContext : DbContext
             entity.Property(e => e.Rol)
                 .HasMaxLength(45)
                 .IsUnicode(false);
+        });
+        modelBuilder.Entity<VistaEnvio>(entity =>
+        {
+            entity.HasNoKey(); 
+            entity.ToView("VistaEnviosDetallados"); 
         });
 
         OnModelCreatingPartial(modelBuilder);

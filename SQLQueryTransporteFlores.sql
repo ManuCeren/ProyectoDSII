@@ -71,6 +71,7 @@ CREATE TABLE Envios (
     Mercancia VARCHAR(255),
     PesoTotal DECIMAL(18,2),
     VolumenTotal DECIMAL(18,2),
+	CostoEnvio DECIMAL(10,2),
     FOREIGN KEY (idCliente) REFERENCES Clientes(idClientes),
     FOREIGN KEY (idRuta) REFERENCES Rutas(idRutas)
 );
@@ -137,10 +138,10 @@ INSERT INTO Clientes (nombreCliente, Direccion, Telefono, Email, TipoCliente) VA
 ('Carlos Ruiz', 'Calle 789, C', '564738291', 'carlos@cliente.com', 'Nuevo');
 
 -- Insertar en la tabla Envíos
-INSERT INTO Envios (idCliente, idRuta, FechaSolicitud, FechaEntregaEsperada, Estado, Mercancía, PesoTotal, VolumenTotal) VALUES 
-(1, 1, '2022-01-01', '2022-01-05', 'En Proceso', 'Carga General', 500, 10),
-(2, 2, '2022-01-03', '2022-01-07', 'Pendiente', 'Ropa', 200, 5),
-(3, 3, '2022-01-04', '2022-01-08', 'Completado', 'Electrónica', 150, 2);
+INSERT INTO Envios (idCliente, idRuta, FechaSolicitud, FechaEntregaEsperada, Estado, Mercancia, PesoTotal, VolumenTotal,CostoEnvio) VALUES 
+(1, 1, '2022-01-01', '2022-01-05', 'En Proceso', 'Carga General', 500, 10,1500),
+(2, 2, '2022-01-03', '2022-01-07', 'Pendiente', 'Ropa', 200, 5,1000),
+(3, 3, '2022-01-04', '2022-01-08', 'Completado', 'Electrónica', 150, 2,1125);
 
 -- Insertar en la tabla Facturación
 INSERT INTO Facturacion (idCliente, FechaFactura, MontoTotal, EstadoPago, idEnvio) VALUES 
