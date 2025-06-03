@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiProyectoDSII.Models;
+using System.Text.Json;
 
 namespace WebApiProyectoDSII.Controllers
 {
@@ -23,10 +24,10 @@ namespace WebApiProyectoDSII.Controllers
         {
             try
             {
-                var listaRutas = await dbContext.Rutas.ToListAsync();
+                var listaRutas = await dbContext.Rutas.OrderByDescending(r => r.IdRutas).ToListAsync();
                 if (listaRutas == null || listaRutas.Count == 0)
                 {
-                    return NotFound(new { mensaje = "No se encontraron rutas." });
+                    return Ok(new { datos = new List<Ruta>(), mensaje = "No se encontraron rutas." });
                 }
                 return Ok(listaRutas);
             }
@@ -56,10 +57,70 @@ namespace WebApiProyectoDSII.Controllers
             }
         }
 
-        // POST: api/Ruta/Nuevo
+        // POST: api/Ruta/Nuevo - Adaptado para recibir JSON del frontend
         [HttpPost]
         [Route("Nuevo")]
-        public async Task<IActionResult> Nuevo([FromBody] Ruta objeto)
+        public async Task<IActionResult> Nuevo([FromBody] JsonElement jsonData)
+        {
+            try
+            {
+                // Log básico para debug (puedes comentar estas líneas en producción)
+                Console.WriteLine($"📥 JSON recibido: {jsonData}");
+
+                // Extraer datos del JSON
+                if (!jsonData.TryGetProperty("Origen", out var origenElement) ||
+                    !jsonData.TryGetProperty("Destino", out var destinoElement) ||
+                    !jsonData.TryGetProperty("Distancia", out var distanciaElement))
+                {
+                    return BadRequest(new { mensaje = "Se requieren las propiedades: Origen, Destino, Distancia" });
+                }
+
+                string origen = origenElement.GetString() ?? "";
+                string destino = destinoElement.GetString() ?? "";
+
+                if (!distanciaElement.TryGetDouble(out double distancia))
+                {
+                    return BadRequest(new { mensaje = "La distancia debe ser un número válido." });
+                }
+
+                // Validaciones básicas
+                if (string.IsNullOrWhiteSpace(origen) || string.IsNullOrWhiteSpace(destino))
+                {
+                    return BadRequest(new { mensaje = "Origen y destino son obligatorios." });
+                }
+
+                if (distancia <= 0)
+                {
+                    return BadRequest(new { mensaje = "La distancia debe ser mayor que cero." });
+                }
+
+                // Crear objeto Ruta
+                var nuevaRuta = new Ruta
+                {
+                    Origen = origen.Trim(),
+                    Destino = destino.Trim(),
+                    Distancia = Math.Round(distancia, 2)
+                };
+
+                // Guardar en base de datos
+                await dbContext.Rutas.AddAsync(nuevaRuta);
+                await dbContext.SaveChangesAsync();
+
+                Console.WriteLine($"✅ Ruta guardada: ID {nuevaRuta.IdRutas}, {nuevaRuta.Origen} -> {nuevaRuta.Destino} ({nuevaRuta.Distancia} km)");
+
+                return Ok(new { mensaje = "Ruta creada correctamente.", rutaId = nuevaRuta.IdRutas });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error al crear ruta: {ex.Message}");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al crear la ruta", error = ex.Message });
+            }
+        }
+
+        // POST alternativo que acepta objeto Ruta directamente (para compatibilidad)
+        [HttpPost]
+        [Route("NuevoRuta")]
+        public async Task<IActionResult> NuevoRuta([FromBody] Ruta objeto)
         {
             if (objeto == null)
             {

@@ -11,7 +11,7 @@ public partial class Ruta
 
     public string? Destino { get; set; }
 
-    public int? Distancia { get; set; }
+    public double? Distancia { get; set; }
 
     public virtual ICollection<Envio> Envíos { get; set; } = new List<Envio>();
 }
