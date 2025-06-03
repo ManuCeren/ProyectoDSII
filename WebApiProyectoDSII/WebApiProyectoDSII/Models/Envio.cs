@@ -11,9 +11,9 @@ public partial class Envio
 
     public int? IdRuta { get; set; }
 
-    public DateOnly? FechaSolicitud { get; set; }
+    public DateTime? FechaSolicitud { get; set; }
 
-    public DateOnly? FechaEntregaEsperada { get; set; }
+    public DateTime? FechaEntregaEsperada { get; set; }
 
     public string? Estado { get; set; }
 

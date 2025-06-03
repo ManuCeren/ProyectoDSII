@@ -1,5 +1,7 @@
 using WebApiProyectoDSII.Models;
 using Microsoft.EntityFrameworkCore;
+using WebApiProyectoDSII.Repositories;
+using WebApiProyectoDSII.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,10 @@ builder.Services.AddDbContext<TransporteFloresDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
 });
+
+// Registro de repositorios y servicios para inyección
+builder.Services.AddScoped<EnviosRepositories>();
+builder.Services.AddScoped<ProyecctionService>();
 
 builder.Services.AddCors(options =>
 {

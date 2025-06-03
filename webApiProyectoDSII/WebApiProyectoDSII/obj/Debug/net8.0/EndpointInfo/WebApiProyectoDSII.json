@@ -269,6 +269,70 @@
         }
       }
     },
+    "/api/Proyeccion/Viajes": {
+      "get": {
+        "tags": [
+          "Proyeccion"
+        ],
+        "parameters": [
+          {
+            "name": "mesesHistorial",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 12
+            }
+          },
+          {
+            "name": "mesesProyeccion",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Proyeccion/Ingresos": {
+      "get": {
+        "tags": [
+          "Proyeccion"
+        ],
+        "parameters": [
+          {
+            "name": "mesesHistorial",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 12
+            }
+          },
+          {
+            "name": "mesesProyeccion",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Unidades/Lista": {
       "get": {
         "tags": [
@@ -560,12 +624,12 @@
           },
           "fechaSolicitud": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "nullable": true
           },
           "fechaEntregaEsperada": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "nullable": true
           },
           "estado": {
@@ -621,7 +685,7 @@
           },
           "fechaFactura": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "nullable": true
           },
           "montoTotal": {

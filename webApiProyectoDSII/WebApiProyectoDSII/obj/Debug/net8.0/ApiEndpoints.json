@@ -168,6 +168,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ProyeccionController",
+    "Method": "GetProyeccionIngresos",
+    "RelativePath": "api/Proyeccion/Ingresos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mesesHistorial",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mesesProyeccion",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyeccionController",
+    "Method": "GetProyeccionViajes",
+    "RelativePath": "api/Proyeccion/Viajes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mesesHistorial",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mesesProyeccion",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApiProyectoDSII.Controllers.UnidadesController",
     "Method": "Editar",
     "RelativePath": "api/Unidades/Editar",

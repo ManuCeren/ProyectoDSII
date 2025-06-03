@@ -9,7 +9,7 @@ public partial class Facturacion
 
     public int? IdCliente { get; set; }
 
-    public DateOnly? FechaFactura { get; set; }
+    public DateTime? FechaFactura { get; set; }
 
     public decimal? MontoTotal { get; set; }
 
